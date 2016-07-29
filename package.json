@@ -1,0 +1,35 @@
+{
+	"name": "@jdes/promisify",
+	"private": false,
+	"version": "1.0.0",
+	"description": "Promisify Node's callback functions and modules",
+	"author": "Jean Desravines <hi@jeandesravines.com> (http://www.jeandesravines.com)",
+	"scripts": {
+		"test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- --recursive",
+		"coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+	},
+	"main": "lib/helper/promisify.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jeandesravines/promisify.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jeandesravines/promisify/issues"
+	},
+	"keywords": [
+		"promisify",
+		"callback",
+		"promise",
+		"es6"
+	],
+	"devDependencies": {
+		"chai": "^3.5.0",
+		"istanbul": "^0.4.2",
+		"mocha": "^2.5.3"
+	},
+	"homepage": "https://github.com/jeandesravines/promisify",
+	"license": "MIT",
+	"engines": {
+		"node": ">=6.2.2"
+	}
+}
