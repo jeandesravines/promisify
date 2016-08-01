@@ -16,8 +16,8 @@ describe('Promisify', () => {
 		'reference': promisify(fs.readFile)
 	};
 
-	for (let c in cases) {
-		describe('Case "' + c + '"', () => {
+	Object.keys(cases).forEach((c) => {
+		describe(`Case "${c}"`, () => {
 			it('should be a function', () => {
 				expect(cases[c]).to.be.a('function');
 			});
@@ -33,8 +33,8 @@ describe('Promisify', () => {
 			it('should reject the promise', () => {
 				return cases[c]('./unknwon/unknown')
 					.then(() => Promise.reject())
-					.catch(() => Promise.resolve());
+					.catch((error) => Promise.resolve());
 			});
 		});
-	}
+	});
 });
