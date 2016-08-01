@@ -7,9 +7,9 @@ Promisify Node's callback functions and modules
 
 * [Setup](#setup)
 * [Usage](#usage)
-    * [Import module](#import module)
-    * [Promisify a module by string](#promisify a module by string)
-    * [Promisify a function](#promisify a function)
+    * [Import module](#import-module)
+    * [Promisify a module by string](#promisify-a-module-by-string)
+    * [Promisify a function](#promisify-a-function)
 * [API](#api)
 * [Example](#example)
 * [Contributing](#contributing) 
