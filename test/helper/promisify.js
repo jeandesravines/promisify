@@ -17,7 +17,7 @@ describe('Promisify', () => {
 	};
 
 	Object.keys(cases).forEach((c) => {
-		describe(`Case "${c}"`, () => {
+		describe(`Case by "${c}"`, () => {
 			it('should be a function', () => {
 				expect(cases[c]).to.be.a('function');
 			});
@@ -37,4 +37,16 @@ describe('Promisify', () => {
 			});
 		});
 	});
+
+	describe('Case other type', () => {
+		it('should return an integer', () => {
+			expect(promisify(3)).to.be.equal(3);
+		});
+
+		it('should return the same thing', () => {
+			['hello', 4, {}].forEach((element) => {
+				expect(promisify(element, true)).to.be.equal(element);
+			});
+		});
+	})
 });
