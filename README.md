@@ -1,7 +1,7 @@
 # Promisify
 
 [![Build Status](https://travis-ci.org/jeandesravines/promisify.svg)](https://travis-ci.org/jeandesravines/promisify)
-[![Coverage Status](https://coveralls.io/repos/github/jeandesravines/promisify/badge.svg?branch=master)](https://coveralls.io/github/jeandesravines/promisify?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/jeandesravines/promisify/badge.svg)](https://coveralls.io/github/jeandesravines/promisify)
 
 Promisify Node's callback functions and modules
 
