@@ -6,14 +6,15 @@
 
 const {describe, it} = require('mocha');
 const {expect, should} = require('chai');
+const Buffer = require('buffer').Buffer;
 const promisify = require('../../lib/helper/promisify');
 const fs = require('fs');
 
 describe('Promisify', () => {
 	const cases = {
-		'string': promisify('fs').readFile,
-		'object': promisify(fs).readFile,
-		'reference': promisify(fs.readFile)
+		string: promisify('fs').readFile,
+		object: promisify(fs).readFile,
+		reference: promisify(fs.readFile)
 	};
 
 	Object.keys(cases).forEach((c) => {
@@ -27,7 +28,10 @@ describe('Promisify', () => {
 			});
 
 			it('should resolve the promise', () => {
-				return cases[c]('/dev/null');
+				return cases[c]('/dev/null')
+					.then((value) => {
+						expect(value).to.be.an.instanceOf(Buffer)
+					});
 			});
 
 			it('should reject the promise', () => {
