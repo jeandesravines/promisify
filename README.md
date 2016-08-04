@@ -1,7 +1,7 @@
 # Promisify
 
 [![Build Status](https://travis-ci.org/jeandesravines/promisify.svg)](https://travis-ci.org/jeandesravines/promisify)
-[![Coverage Status](https://coveralls.io/repos/github/jeandesravines/promisify/badge.svg?branch=master)](https://coveralls.io/github/jeandesravines/promisify?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/jeandesravines/promisify/badge.svg)](https://coveralls.io/github/jeandesravines/promisify)
 
 Promisify Node's callback functions and modules
 
@@ -11,7 +11,7 @@ Promisify Node's callback functions and modules
 * [Setup](#setup)
 * [Usage](#usage)
     * [Import module](#import-module)
-    * [Promisify a module by string](#promisify-a-module-by-string)
+    * [Promisify a module by name](#promisify-a-module-by-name)
     * [Promisify a function](#promisify-a-function)
 * [API](#api)
 * [Example](#example)
@@ -37,7 +37,7 @@ $ npm install @jdes/promisify
 const promisify = require('@jdes/promisify');
 ```
 
-### Promisify a module by string
+### Promisify a module by name
 
 ```javascript
 /**
@@ -60,7 +60,7 @@ const fs = require('fs');
 const promisify = require('@jdes/promisify');
 
 /**
- * @type {Object}
+ * @type {function}
  */
 const readFile = promisify(fs.readFile);
 ```
@@ -75,7 +75,7 @@ const readFile = promisify(fs.readFile);
 // Import the modue
 const promisify = require('@jdes/promisify');
 
-// Promisify by name
+// Promisify by module name
 const fs = promisify('fs');
 
 // read file
