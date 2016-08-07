@@ -49,8 +49,8 @@ describe('Promisify', () => {
 
 		it('should return the same thing', () => {
 			['hello', 4, {}].forEach((element) => {
-				expect(promisify(element, true)).to.be.equal(element);
+				expect(promisify(element, true)).to.be.eql(element);
 			});
 		});
-	})
+	});
 });
