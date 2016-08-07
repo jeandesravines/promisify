@@ -22,6 +22,7 @@ Promisify Node.js's callback functions and modules
 ## Setup
 
 This module can then be installed with npm:
+
 ```shell
 $ npm install @jdes/promisify
 ```
@@ -96,6 +97,7 @@ All pull requests have to pass tests and have a sufficient coverage.
 ## Tests
 
 You can run the tests with npm:
+
 ```shell
 $ npm test
 ```
