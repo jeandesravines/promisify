@@ -1,11 +1,11 @@
 {
 	"name": "@jdes/promisify",
 	"private": false,
-	"version": "1.1.0",
-	"description": "Promisify Node's callback functions and modules",
+	"version": "1.1.1",
+	"description": "Promisify Node.js's callback functions and modules",
 	"author": "Jean Desravines <hi@jeandesravines.com> (http://www.jeandesravines.com)",
 	"scripts": {
-		"test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- --recursive",
+		"test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- --recursive",
 		"coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
 	},
 	"main": "lib/helper/promisify.js",
@@ -26,7 +26,8 @@
 		"chai": "^3.5.0",
 		"coveralls": "^2.11.11",
 		"istanbul": "^0.4.2",
-		"mocha": "^2.5.3"
+		"mocha": "^3.0.1",
+		"mocha-lcov-reporter": "^1.2.0"
 	},
 	"homepage": "https://github.com/jeandesravines/promisify",
 	"license": "MIT",
