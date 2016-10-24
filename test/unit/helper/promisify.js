@@ -7,7 +7,7 @@
 const {describe, it} = require('mocha');
 const {expect, should} = require('chai');
 const Buffer = require('buffer').Buffer;
-const promisify = require('../../lib/helper/promisify');
+const promisify = require('../../../lib/helper/promisify');
 const fs = require('fs');
 
 describe('Promisify', () => {
