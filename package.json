@@ -1,7 +1,7 @@
 {
 	"name": "@jdes/promisify",
 	"private": false,
-	"version": "1.1.5",
+	"version": "1.1.61",
 	"description": "Promisify Node.js's callback functions and modules",
 	"author": "Jean Desravines <hi@jeandesravines.com> (http://www.jeandesravines.com)",
 	"scripts": {
