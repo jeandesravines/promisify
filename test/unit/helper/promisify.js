@@ -37,7 +37,7 @@ describe('Promisify', () => {
 			it('should reject the promise', () => {
 				return cases[c]('./unknwon/unknown')
 					.then(() => Promise.reject())
-					.catch((error) => Promise.resolve());
+					.catch(() => Promise.resolve());
 			});
 		});
 	});
