@@ -1,8 +1,9 @@
 # Promisify
 
 [![Build Status](https://travis-ci.org/jeandesravines/promisify.svg)](https://travis-ci.org/jeandesravines/promisify)
-[![Coverage Status](https://coveralls.io/repos/github/jeandesravines/promisify/badge.svg)](https://coveralls.io/github/jeandesravines/promisify)
+[![codecov](https://codecov.io/gh/jeandesravines/mutex/branch/master/graph/badge.svg)](https://codecov.io/gh/jeandesravines/mutex)
 
+/!\ Deprecated /!\
 Promisify Node.js's callback functions and modules
 
 
@@ -19,10 +20,10 @@ Promisify Node.js's callback functions and modules
 
 ## Setup
 
-This module can then be installed with npm:
+This module can then be installed with yarn:
 
 ```shell
-npm install @jdes/promisify
+yarn add @jdes/promisify
 ```
 
 ## Usage
